@@ -31,11 +31,11 @@ const Game = ({
       <p className="points">
         <span>Pontuação</span>: {score}
       </p>
-      <h1>Advinhe a palavra:</h1>
+      <h1>Adivinhe a Palavra</h1>
       <h3 className="tip">
-        Dica sobre a palavra: <span>{pickedCategory}</span>
+        Dica: <span>{pickedCategory}</span>
       </h3>
-      <p>Você ainda tem {guesses} tentativa(s).</p>
+      <p>Você ainda tem {guesses} tentativa(s)</p>
       <div className="wordContainer">
         {letters.map((letter, i) =>
           guessedLetters.includes(letter) ? (
@@ -48,7 +48,7 @@ const Game = ({
         )}
       </div>
       <div className="letterContainer">
-        <p>Tente advinhar uma letra:</p>
+        <p>Tente adivinhar uma letra:</p>
         <form onSubmit={handleSubmit}>
           <input
             type="text"
